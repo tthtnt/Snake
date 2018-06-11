@@ -1,0 +1,66 @@
+section#main{
+    width: 960px;
+    margin: auto;
+}
+table{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-spacing: 0;
+    border:2px solid #b4a79e;
+    background-color: #cfbeb4;
+}
+table tr td{
+    /* background-color: #cfbeb4; */
+    border:2px solid #b4a79e;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+table td.Snake-Head::before{
+    /* padding: 4px; */
+    /* margin: 2px; */
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: greenyellow;
+}
+table td.Snake-Body::before{
+    /* padding: 4px; */
+    /* margin: 2px; */
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: yellowgreen;
+}
+table td.food::before{
+    /* padding: 4px; */
+    /* margin: 2px; */
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rebeccapurple;
+}
+div#gameMessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    display: none;
+    font-size: 100px;
+}
+div#gameMessage.display{
+    display: block;
+}
